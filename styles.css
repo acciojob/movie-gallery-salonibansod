@@ -1,2 +1,45 @@
+/* Ensure that the container occupies the full width of the viewport */
+.container-fluid {
+    padding: 0;
+}
+
+/* Add margin and padding for the images */
+img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover; /* Ensures images maintain aspect ratio and fill the space */
+    margin: 5px;
+}
+
+/* Customize the rows */
+.row {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+/* Adjust the columns for different screen sizes */
+.col-sm-1 {
+    flex: 0 0 8.33%;
+}
+
+.col-sm-2 {
+    flex: 0 0 16.66%;
+}
+
+.col-sm-4 {
+    flex: 0 0 33.33%;
+}
+
+.col-sm-12 {
+    flex: 0 0 100%;
+}
+
+/* Apply responsive design */
+@media (max-width: 768px) {
+    .col-sm-1, .col-sm-2, .col-sm-4, .col-sm-12 {
+        flex: 0 0 100%; /* All columns take full width on smaller screens */
+    }
+}
 
 /* Your CSS Code here. */
