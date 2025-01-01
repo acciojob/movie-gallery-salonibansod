@@ -27,6 +27,12 @@ img {
     flex: 0 0 16.66%;
 }
 
+.movie-image {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+
 .col-sm-4 {
     flex: 0 0 33.33%;
 }
